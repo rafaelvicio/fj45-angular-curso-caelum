@@ -10,6 +10,7 @@ import { FotoModule } from './foto/foto.module';
 import { PainelModule } from './painel/painel.module';
 import { routing } from './app.routes';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { BotaoConfirmacaoComponent } from './botao-confirmacao/botao-confirmacao.component';
 @NgModule({
   imports: [
     BrowserModule,
@@ -20,7 +21,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     FormsModule,
     ReactiveFormsModule
   ],
-  declarations: [AppComponent, ListagemComponent, CadastroComponent],
+  declarations: [AppComponent, ListagemComponent, CadastroComponent, BotaoConfirmacaoComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

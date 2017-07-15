@@ -8,6 +8,9 @@
       <form>
         <div class="input-group">
           <span class="input-group-btn">
+            <a [routerLink]="['']" class="btn btn-primary">
+              Home
+            </a>
             <a [routerLink]="['/cadastro']" class="btn btn-primary">
               Nova foto
             </a>
@@ -26,7 +29,7 @@
       <a [routerLink]="['/cadastro', foto._id]">
         <foto titulo="{{foto.titulo}}" url="{{foto.url}}"></foto>
       </a>
-      <button class="btn btn-danger btn-block" (click)="remove(foto)">Remover</button>
+      <botao nome="Remove" estilo="btn-danger btn-block" (acao)="remove(foto)" confirmacao="true">Remover</botao>
     </painel>
   </div>
   <!-- fim row -->
